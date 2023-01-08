@@ -1,0 +1,30 @@
+.socials {
+  @include flex;
+  gap: 10px;
+}
+.socials__link {
+  width: 44px;
+  height: 44px;
+  @include flex;
+  border-radius: 50%;
+  transition: color $transform-duration $time-function,
+    background-color $transform-duration $time-function;
+  &--light-bg {
+    color: $icons-color;
+    fill: currentColor;
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      color: $tertiary-text-color;
+    }
+  }
+  &--dark-bg {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $tertiary-text-color;
+    fill: currentColor;
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+  }
+}

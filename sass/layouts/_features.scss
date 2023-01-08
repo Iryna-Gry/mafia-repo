@@ -1,0 +1,61 @@
+/* -------------------------Features ------------------------*/
+.features {
+  background-color: $tertiary-text-color;
+}
+.pros-list {
+  display: flex;
+  flex-direction: column;
+  // margin: 0 auto;
+  width: 100%;
+  gap: 30px;
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  &__item {
+    width: 100%;
+    border-radius: 34px;
+    padding: 15px 25px;
+    overflow: hidden;
+    display: flex;
+    color: $secondary-text-color;
+    @include mobile {
+      max-width: 450px;
+    }
+    @include desktop {
+      max-width: calc((100% - 30px) / 2);
+    }
+    &--red {
+background-color: $secondary-accent-color;
+    }
+    &--black {
+background-color: $dark-bg-color;
+    }
+  }
+  &__title {
+    margin-bottom: 10px;
+    @include font-box(700, null, 1.14, null);
+    text-transform: uppercase; 
+    text-align: center;
+    @include tablet {
+      text-align: left;
+    }
+  }
+  &__text {
+    line-height: 1.71;
+  }
+  &__text-wrapper {
+    margin-left: 30px;
+    background-color: $tertiary-text-color;
+    border-radius: 15px;
+    padding: 15px;
+  }
+}
+.image-wrapper {
+  border-radius: 15px;
+  overflow: hidden;
+  object-fit: contain;
+  max-width: 150px;
+}

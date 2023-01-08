@@ -1,0 +1,24 @@
+.social-media--menu {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  @media screen and (max-width: 440px) {
+    justify-content: center;
+  }
+}
+.social-media__item {
+  display: block;
+  &:not(:last-child) {
+    margin-right: 10px;
+    &::after {
+      content: '|';
+      @include font-box(500, 18px, 1.22, 0.02em);
+      color: rgba(33, 33, 33, 0.2);
+    }
+  }
+}
+.social-media__link {
+  @include font-box(500, 18px, 1.22, 0.02em);
+  color: $accent-color;
+}

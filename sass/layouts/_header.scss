@@ -1,0 +1,36 @@
+/* -------------------------Header ------------------------*/
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100vw;
+  background-color: $dark-bg-color;
+  @media screen and (max-width: calc(768px - 1px)) {
+    padding-top: 16px;
+    padding-bottom: 16px; 
+  }
+  & .main-nav {
+    @include tablet {
+      @include flex;
+    }
+  }
+  &__logo {
+    border: 1px solid $primary-text-color;
+    border-radius: 7px;
+    padding: 2px 5px;
+    overflow: hidden;
+    object-fit: cover;
+    @include tablet {
+      margin-right: auto;
+    }
+    // @include desktop {
+    //   margin-right: 93px;
+    // }
+  }
+}
+/* ----------------------Nav----------------------------- */
+.navigation {
+  @include tablet {
+    @include flex;
+  }
+}

@@ -1,0 +1,44 @@
+.modal-form-checkbox {
+  margin-right: 8px;
+}
+.checkbox-label {
+  @include flex;
+  margin-bottom: 31px;
+  @include font-box(400, 12px, 1.17);
+  color: $primary-text-color;
+  @include desktop {
+    margin-bottom: 30px;
+    @include font-box(400, 14px, 1.71);
+  }
+}
+.checkbox-link {
+  margin-left: 4px;
+  text-decoration: underline;
+  color: $accent-color;
+}
+.policy-checkbox {
+  display: inline-block;
+  &:checked + .policy-icon {
+    background-color: $accent-color;
+    border-color: $accent-color;
+    fill: $tertiary-text-color;
+    outline: transparent;
+  }
+  &:focus + .policy-icon {
+    border-color: $accent-color;
+  }
+}
+.policy-icon {
+  @include flex;
+  width: 16px;
+  height: 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+  fill: transparent;
+  border: 2px solid $secondary-text-color;
+  border-radius: 4px;
+  transition: background-color $transform-duration $time-function,
+    border-color $transform-duration $time-function,
+    fill $transform-duration $time-function;
+}

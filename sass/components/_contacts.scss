@@ -1,0 +1,37 @@
+/* -------------------------Contacts------------------------*/
+.header-login-list {
+  display: none;
+  @include tablet {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+  }
+  @include desktop {
+    display: flex;
+  }
+  &--menu {
+    margin-bottom: 64px;
+  }
+  & .login__item {
+    display: flex;
+  }
+  & > .login__item + .login__item {
+    @include desktop {
+    margin-left: 10px;
+    }
+  }
+  &__icon {
+    margin-right: 10px;
+  }
+  &__item--menu:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  &__button--menu--blue {
+    @include font-box(500, 34px, 1.18, 0.02em);
+    color: $accent-color;
+  }
+  &__button--menu {
+    @include font-box(500, 24px, 1.17, 0.02em);
+    color: $primary-text-color;
+  }
+}

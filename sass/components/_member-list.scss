@@ -1,0 +1,39 @@
+.member-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  @include tablet {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  &__card {
+    width: 100%;
+    background-color: $main-bg-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    @include tablet {
+      width: calc((100% - 30px) / 2);
+    }
+    @include desktop {
+      width: calc((100% - 90px) / 4);
+    }
+  }
+  &__wrap {
+    padding: 30px 32px 24px;
+    @include desktop {
+      padding: 30px 32px;
+    }
+  }
+  &__title {
+    margin-bottom: 10px;
+    @include font-box(500, 16px, 1.19);
+    text-align: center;
+    color: $secondary-text-color;
+  }
+  &__position {
+    margin-bottom: 16px;
+    @include font-box(null, 16px, 1.19);
+    text-align: center;
+  }
+}

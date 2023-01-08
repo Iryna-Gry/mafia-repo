@@ -1,0 +1,72 @@
+/* -------------------------Team ------------------------*/
+.team.section {
+  background-color: $secondary-bg-color;
+}
+.team-list {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+ margin-bottom: 20px;
+  &__item {
+    width: calc((100% - 30px) / 2);
+    border-radius: 34px;
+    min-height: 100%;
+    padding: 20px 50px;
+    color: $primary-text-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    
+    &--red {
+      background-color: $secondary-accent-color;  
+    }
+    &--black{
+      background-color: $dark-bg-color;
+    }
+  }
+  &__title {
+        text-align: center;
+text-transform: uppercase;
+font-size: 24px;
+margin-bottom: 5px;
+
+  }
+  &__sub-title {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+.team-icons-list {
+  display: flex;
+  border-top: 1px solid $primary-text-color;
+  padding-top: 10px;
+  justify-content: center;
+  gap: 15px;
+  &__item {
+display: flex;
+align-items: center;
+&>span {
+    font-size: 30px;
+  }
+    &>svg{
+      color: $primary-text-color;
+      fill: currentColor;
+    }
+  }
+&__text {
+  margin-left: 10px;
+  font-size: 20px;
+}
+}
+
+.team-features-list {
+  list-style: disc inside;
+  &__item {
+    text-align: justify;
+    font-size: 16px;
+  }
+     &__item:not(:last-child) {
+      margin-bottom: 10px;
+     }
+}

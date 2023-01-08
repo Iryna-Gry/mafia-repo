@@ -1,0 +1,126 @@
+/* -------------------------Hero ------------------------*/
+.hero {
+  height: 430px;
+  // width: 100%;
+  padding-top: 128px;
+  padding-bottom: 0px;
+  // margin-left: auto;
+  // margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/card-set.jpg);
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/card-set.webp);
+    text-align: center;
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-img-480@2x.jpg);
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-img-480@2x.webp);
+  }
+  @media screen and (min-width: 481px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/card-set.jpg);
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/card-set.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-img-768@2x.jpg);
+        background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-img-768@2x.webp);
+    }
+  }
+  @include desktop {
+    margin-top: 70px;
+    padding-top: 200px;
+    padding-bottom: 0px;
+    height: 580px;
+  }
+    @media screen and (min-width:769px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/card-set.jpg);
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/card-set.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-img-1600@2x.jpg);
+        background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-img-1600@2x.webp);
+    }
+    @media screen and (min-width:1201px) {
+      background-size: 1600px;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+}
+.hero--mg {
+  margin-top: 60px;
+  @include tablet {
+    margin-top: 80px;
+  }
+}
+.hero__title {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  @include font-box(900, 26px, 1.62, 0.06em);
+  color: $tertiary-text-color;
+  @include desktop {
+    max-width: 696px;
+    @include font-box(900, 44px, 1.36, 0.06em);
+  }
+}
+.hero__title--mg {
+  margin-bottom: 30px;
+}
+.hero__button {
+  padding: 10px 24px;
+  @include desktop {
+    padding: 10px 32px;
+  }
+}

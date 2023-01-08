@@ -1,0 +1,121 @@
+/* -------------------------Portfolio page ------------------------*/
+.section.portfolio {
+  margin-top: 60px;
+  @include tablet {
+    margin-top: 80px;
+  }
+}
+.list.button-list {
+  margin-bottom: 40px;
+  @include tablet {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+.button-list > li {
+  display: inline-block;
+  margin-bottom: 15px;
+  @include tablet {
+    margin-bottom: 0;
+  }
+}
+.button-item:not(last-child) {
+  margin-right: 8px;
+}
+.portfolio-button {
+  display: inline-block;
+  padding: 6px 22px;
+  @include font-box(500, 16px, 1.62);
+  text-align: center;
+  color: $secondary-text-color;
+  background-color: $secondary-bg-color;
+
+  border-radius: 4px;
+  border: transparent;
+  transition: color $transform-duration $time-function,
+    background-color $transform-duration $time-function,
+    box-shadow $transform-duration $time-function;
+  &:hover,
+  &:focus,
+  &.current {
+    color: $tertiary-text-color;
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+.portfolio.list {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 30px;
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.portfolio-item {
+  width: 100%;
+  max-width: 450px;
+  transition: box-shadow $transform-duration $time-function;
+  @include tablet {
+    max-width: 354px;
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    max-width: 370px;
+    width: calc((100% - 60px) / 3);
+  }
+}
+.portfolio-link {
+  display: block;
+  height: 100%;
+  outline: 1px solid #eeeeee;
+  outline-offset: -1px;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+  .description {
+    max-width: 450px;
+    padding: 20px 24px;
+    @include tablet {
+      max-width: 354px;
+    }
+    @include desktop {
+      max-width: 370px;
+    }
+  }
+.image-combo {
+  position: relative;
+  overflow: hidden;
+}
+.image-description {
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  @include flex;
+  background: rgba(33, 150, 243, 0.9);
+  transition: transform $transform-duration $time-function;
+
+  .portfolio-link:hover &,
+  .portfolio-link:focus & {
+    transform: translateY(-100%);
+  }
+  &-text {
+    margin: auto 24px;
+    @include font-box(400, 18px, 1.56);
+    color: $tertiary-text-color;
+  }
+}
+.portfolio .title {
+  margin-bottom: 4px;
+  @include font-box(700, 18px, 2, 0.06em);
+  color: $secondary-text-color;
+}
+.portfolio .type {
+  @include font-box(null, 16px, 1.87);
+  color: $primary-text-color;
+}

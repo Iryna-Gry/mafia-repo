@@ -1,0 +1,45 @@
+.button {
+    cursor: pointer;
+    line-height: 1.62;
+
+    @include font-box(700, 16px, 1.88, 0.06em);
+    border-color: transparent;
+    border-radius: 4px;
+    transition: background-color $transform-duration $time-function,
+        box-shadow $transform-duration $time-function;
+
+    &:hover,
+    &:focus {
+        background-color: $secondary-accent-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}
+.login__button {
+    @include flex;
+    color: $primary-text-color;
+    fill: currentColor;
+    transition: color $transform-duration $time-function;
+    padding: 8px 20px;
+    &--clean{
+        @include font-box(400, null, 1.14, 0.02em);
+        color: $primary-text-color;
+            background-color: transparent;
+            border: 1px solid $secondary-accent-color;
+            &:hover,
+                &:focus {
+                    color: $primary-text-color;
+                    background-color: $secondary-accent-color;
+                }
+
+    }
+    &--red {
+        @include font-box(500, null, 1.14, 0.02em);
+        color: $tertiary-text-color;
+     background-color: $accent-color;
+    &:hover,
+        &:focus {
+    background-color: $secondary-accent-color;
+        }
+
+    }
+}

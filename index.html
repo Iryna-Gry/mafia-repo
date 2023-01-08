@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="./css/cropper.css" />
+    <link rel="stylesheet" href="./css/jquery.datetimepicker.min.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./images/mafia-vintage-logo-short.svg"
+    />
+    <title>MafiaClub KryvyiRih</title>
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1089.0" data-gr-ext-installed="">
+    <div class="wrapper">
+      <header class="header">
+        <div class="container main-nav">
+          <a class="header__logo" href="./index.html">
+            <picture><source srcset="./images/club-logo-w-city.webp" type="image/webp"></source>
+            <img src="./images/club-logo-w-city.jpg"alt="Main logo" width="120"></picture>
+          </a>
+          <!-- <label
+            for="header__navigation-checkbox"
+            class="navigation-for-small-display menu-show"
+            ><i class="fa fa-bars"></i
+          ></label>
+          <input
+            type="checkbox"
+            name="toggle-navigation"
+            id="header__navigation-checkbox"
+            class="navigation-for-small-display"
+            autocomplete="off"
+          /> -->
+          <nav class="header__navigation navigation" id="header__navigation">
+            <!-- <label
+              for="header__navigation-checkbox"
+              class="navigation-for-small-display menu-hide"
+              ><i class="fa fa-times"></i
+            ></label> -->
+<ul class="site-nav">
+  <li class="site-nav__item">
+    <a href="/news" class="site-nav__link">Що таке мафія?</a>
+    <div class="bar"></div>
+  </li>
+            <li class="site-nav__item">
+              <a href="/news" class="site-nav__link">Новини</a>
+              <div class="bar"></div>
+            </li>
+            <li class="site-nav__item">
+              <a href="/weeks" class="site-nav__link">Наш розклад</a>
+              <div class="bar"></div>
+            </li>
+            <li class="site-nav__item">
+              <a href="/game" class="site-nav__link">Інші ігри</a>
+              <div class="bar"></div>
+              <!-- <menu class="dropdown__menu">
+                <div class="dropdown__item">
+                  <a href="/game/mafia">Мафія</a>
+                  <div class="dropdown__bar"></div>
+                </div>
+                <div class="dropdown__item">
+                  <a href="/game/poker">Покер</a>
+                  <div class="dropdown__bar"></div>
+                </div>
+                <div class="dropdown__item">
+                  <a href="/game/board">Настолки</a>
+                  <div class="dropdown__bar"></div>
+                </div>
+                <div class="dropdown__item">
+                  <a href="/game/cash">Кеш-покер</a>
+                  <div class="dropdown__bar"></div>
+                </div>
+                <div class="dropdown__item">
+                  <a href="/game/etc">Інше</a>
+                  <div class="dropdown__bar"></div>
+                </div>
+              </menu> -->
+            </li>
+          </nav>
+        </ul>
+        <ul class="header-login-list">
+          <li class="login__item"><a
+            class="login__button login__button--clean button"
+            data-action-click="account/login/form"
+            >Вхід</a></li>
+          <li class="login__item"><a
+            class="login__button login__button--red button"
+            data-action-click="account/login/form"
+            >Хочу пограти!</a
+          ></li>
+        </ul>
+        </div>
+      </header>
+      <!-- <div class="header-for-auto-scroll" id="start-page"></div> -->
+      <main class="main">
+        <section class="hero section">   
+            <div class="hero-images__wrapper">
+                
+               
+            </div>
+            <div class="container">
+            <h1 class="hero__title section-title">Клуб класичної мафії у Кривому Розі</h1>
+          </div>
+        </section>
+        <section class="about section">
+        <div class="container">
+          <h2 class="section-title">Що таке мафія?</h2>
+          <p class="about__text">
+            Гра Мафія - це змагання двох команд - мафії та мирних мешканців - за контроль над містом.  
+          </p>
+          <ul class="team-list">
+            <li class="team-list__item team-list__item--red"><div><h3 class="team-list__title">Червона команда</h3>
+              <p class="team-list__sub-title">(Мирні мешканці)</p></div>
+              <ul class="team-features-list">
+                <li class="team-features-list__item">Не знають, хто справжній Шериф;</li>
+                <li class="team-features-list__item">Доведеться самостійно шукати
+                однодумців;</li>
+                <li class="team-features-list__item">Аби виграти треба домовитися між собою та вигнати мафію;</li>
+                <li class="team-features-list__item">Можуть діяти лише вдень (окрім Шерифа);</li>
+                <li class="team-features-list__item">Єдина "зброя" проти мафії - денне голосування.</li>
+              </ul>
+              <div>
+          <ul class="team-icons-list">
+            <li class="team-icons-list__item"><svg width="50" height="50">
+              <use href="./images/sprite.svg#icon-user-tie"></use>
+            </svg><p class="team-icons-list__text">Шериф</p></li>
+            <li class="team-icons-list__item"><span>+</span></li>
+            <li  class="team-icons-list__item"><svg width="50" height="50">
+              <use href="./images/sprite.svg#icon-users"></use>
+            </svg><p class="team-icons-list__text">X 6</p> </li>
+          </ul>
+        </div></li>
+            <li class="team-list__item team-list__item--black"><div><h3  class="team-list__title">Чорна команда</h3>
+              <p class="team-list__sub-title">(Мафія)</p></div>
+            <ul class="team-features-list">
+              <li class="team-features-list__item">Знають власного лідера (Дона мафії) та членів команди;</li>
+            <li class="team-features-list__item">Мають час узгодити власні дії (шляхом жестикуляцій);</li>
+            <li class="team-features-list__item">Повинні ховати свою роль, прикидаючись мирними мешканцями або навіть шерифом;</li>
+            <li class="team-features-list__item">Беруть участь у денному голосуванні та мають змогу вбивати вночі.</li>
+          </ul>
+        <div>
+          <ul class="team-icons-list">
+            <li class="team-icons-list__item"><svg width="50" height="50">
+              <use href="./images/sprite.svg#icon-user-tie"></use>
+            </svg><p class="team-icons-list__text">Дон мафії</p></li>
+            <li class="team-icons-list__item"><span>+</span></li>
+            <li  class="team-icons-list__item"><svg width="50" height="50">
+              <use href="./images/sprite.svg#icon-users"></use>
+            </svg><p class="team-icons-list__text">X 2</p> </li>
+          </ul>
+        </div>
+      </li>
+          </ul>
+            <p class="about__text">
+              У вас буде можливість приміряти на собі різні ролі та спробувати
+              здобути командну перемогу!</p>
+        </div>
+        </section>
+        <section class="features section">
+          <div class="container">
+            <h2 class="section-title">Ролі</h2>
+            <ul class="pros-list">
+              
+              
+              <li class="pros-list__item pros-list__item--red">
+                <picture>
+                  <source srcset="./images/sherriff-card-cut@400px.webp" type="image/webp">
+                  </source>
+                  <img  class="image-wrapper" src="./images/sherriff-card-cut@400px.jpg" alt="Don Corleone with cat">
+                </picture>
+                <div class="pros-list__text-wrapper">
+                  <h3 class="pros-list__title">Шериф</h3>
+                  <p class="pros-list__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, debitis.</p>
+                </div>
+              </li>
+              <li class="pros-list__item pros-list__item--black">
+                <picture>
+                  <source srcset="./images/don-card-cut@400px.webp" type="image/webp">
+                  </source>
+                  <img class="image-wrapper" src="./images/don-card-cut@400px.jpg" alt="Don Corleone with cat">
+                </picture>
+                <div class="pros-list__text-wrapper">
+                  <h3 class="pros-list__title">Дон мафії</h3>
+                  <p class="pros-list__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, debitis.</p>
+                </div>
+              </li>
+              <li class="pros-list__item pros-list__item--red">
+                <picture>
+                  <source srcset="./images/citizen-card-cut@400px.webp" type="image/webp">
+                  </source>
+                  <img class="image-wrapper" src="./images/citizen-card-cut@400px.jpg" alt="Don Corleone with cat">
+                </picture>
+                <div class="pros-list__text-wrapper">
+                  <h3 class="pros-list__title">Мирний мешканець</h3>
+                  <p class="pros-list__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, debitis.
+                    <ul>
+                    <li class="team-features-list__item">Єдина "зброя" проти мафії - денне голосування</li>
+                  </p>
+                  </ul>
+                </div>
+              </li>
+              <li class="pros-list__item pros-list__item--black">
+                <picture>
+                  <source srcset="./images/mafia-card-cut@400px.webp" type="image/webp">
+                  </source>
+                  <img class="image-wrapper" src="./images/mafia-card-cut@400px.jpg" alt="Don Corleone with cat">
+                </picture>
+                <div class="pros-list__text-wrapper">
+                  <h3 class="pros-list__title">Мафія</h3>
+                  <p class="pros-list__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, debitis.</p>
+                </div>
+              </li> 
+              <!-- <li class="hero-images__item"><picture>
+                                    <source srcset="./images/poker-aces.jpg" type="image/webp">
+                                    </source>
+                                    <img src="./images/poker-aces.jpg" alt="Don Corleone with cat">
+                                </picture></li> -->
+            </ul>
+            <p class="about__text">
+              Запрошуємо Вас, до нашого дружнього та кмітливого клубу гравців у
+              Мафію!:)
+            </p>
+          </div>
+        </section>
+      </main>
+      <footer class="footer"> 
+        <div class="container">
+        <div class="footer_content"></div>
+        <div class="footer__copyrights">
+          Designed for Kriviy Rih Mafia Club, by DSVan
+        </div>
+        <div class="footer__links">
+          <!-- <a href="https://ru-ru.facebook.com/demontechno" target="_blank" class="footer__link"><i class="fa fa-facebook-square"></i></a> -->
+          <!-- <a href="" class="footer__link"><i class="fa fa-linkedin-square"></i></a> -->
+          <!-- <a href="https://github.com/dsvan88" target="_blank" class="footer__link"><i class="fa fa-github-square"></i></a> -->
+          <a href="https://t.me/dsvan88" target="_blank" class="footer__link"
+            ><i class="fa fa-telegram"></i
+          ></a>
+          <!-- <a href="tel:+380964518770" target="_blank" class="footer__link"><i class="fa fa-phone-square"></i></a> -->
+        </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      defer=""
+      type="text/javascript"
+      src="/public/scripts/jquery.min.js"
+    ></script>
+    <script
+      defer=""
+      type="text/javascript"
+      src="/public/scripts/jquery-ui.min.js"
+    ></script>
+    <script
+      defer=""
+      type="text/javascript"
+      src="/public/scripts/jquery.datetimepicker.full.min.js"
+    ></script>
+    <script
+      defer=""
+      type="text/javascript"
+      src="/public/scripts/jquery-cropper.js"
+    ></script>
+    <script
+      defer=""
+      type="text/javascript"
+      src="/public/scripts/common-funcs.js?v=1671788238"
+    ></script>
+    <script defer="" type="text/javascript" src=""></script>
+    <script
+      defer=""
+      type="text/javascript"
+      src="/public/scripts/common.js?v=1671788238"
+    ></script>
+    <script
+      defer=""
+      type="text/javascript"
+      src="/public/scripts/modals.js?v=1671788238"
+    ></script>
+  </body>
+</html>

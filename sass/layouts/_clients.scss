@@ -1,0 +1,32 @@
+/* --------------------------Clients-------------------------------- */
+.logo-list {
+  max-width: 100%;
+  @include flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.logo-list-item {
+  width: calc((100% - 30px) / 2);
+  @include tablet {
+    width: calc((100% - 60px) / 3);
+  }
+  @include desktop {
+    width: calc((100% - 150px) / 6);
+  }
+}
+.logo-link {
+  height: 92px;
+  @include flex;
+  border: 1px solid $icons-color;
+  border-radius: 4px;
+  color: $icons-color;
+  fill: currentColor;
+  transition: border-color $transform-duration $time-function,
+    color $transform-duration $time-function;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    color: $accent-color;
+  }
+}

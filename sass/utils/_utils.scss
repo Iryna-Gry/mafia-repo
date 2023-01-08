@@ -1,0 +1,88 @@
+body {
+  font-family: "Roboto", sans-serif;
+  @include font-box(null, 14px, null);
+  color: $secondary-text-color;
+  background-color: $main-bg-color;
+}
+ul,
+li,
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+ul{
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img, 
+picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  @include mobile {
+    max-width: 480px;
+  }
+  @include tablet {
+    max-width: 768px;
+  }
+  @include desktop {
+    max-width: 1200px;
+  }
+  /* outline: 2px solid #188ce8; */
+}
+.wrapper {
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  // @include desktop {
+  //   padding-top: 60px;
+  //   padding-bottom: 60px;
+  // }
+}
+.section-title {
+  margin-bottom: 20px;
+  @include font-box(700, 28px, 1.18);
+  text-align: center;
+  color: $secondary-text-color;
+  @include desktop {
+    margin-bottom: 30px;
+    @include font-box(700, 36px, 1.16);
+  }
+}
+.thumb {
+  @include flex;
+  height: 120px;
+  width: 100%;
+  margin-bottom: 30px;
+  background: $secondary-bg-color;
+  border-radius: 4px;
+}
+
+.vis-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
